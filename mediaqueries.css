@@ -1,4 +1,11 @@
 @media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #mobile-nav {
+        display: flex;
+    }
+
     .hero-text {
         align-self: center;
         font-size: 6rem;
@@ -41,6 +48,13 @@
 }
 
 @media screen and (max-width: 360px) {
+    section {
+        padding-top: 4vh;
+        height: 96vh;
+        margin: 0 5rem;
+        box-sizing: border-box;
+        min-height: fit-content;
+    }
     .hero-text {
         align-self: center;
         font-size: 1.5rem;

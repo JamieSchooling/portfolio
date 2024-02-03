@@ -6,6 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="mediaqueries.css"/>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <nav id="desktop-nav">
@@ -18,10 +19,25 @@
             </ul>
         </div>
     </nav>
+    <nav id="mobile-nav">
+        <div class="logo">JS</div>
+        <div class="mobile-menu">
+            <div class="mobile-menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
     <section id="hero">
         <div class="hero-text">
-            <h1 class="first-name slide-left">Jamie</h1>
-            <h1 class="surname slide-right">Schooling</h1>
+            <h1 class="first-name slide-right">Jamie</h1>
+            <h1 class="surname slide-left">Schooling</h1>
         </div>
     </section>
 </body>
