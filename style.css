@@ -76,6 +76,9 @@ section {
     justify-content: center;
     height: 80vh;
 }
+#hero:hover {
+    cursor: default;
+}
 
 .section-text {
     align-self: center;
