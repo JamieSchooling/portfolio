@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap");
 
+/* General */
 
 * {
     margin: 0;
@@ -15,9 +16,11 @@ html {
     scroll-behavior: smooth;
 }
 
-p {
+h1, p {
     color: #F6F3FC;
 }
+
+/* Desktop Nav */
 
 nav, .nav-links {
     display: flex;
@@ -29,15 +32,6 @@ nav {
     padding-left: 5vw;
     padding-right: 5vw;
     height: 7vh;
-}
-
-.logo {
-    color: #F6F3FC;
-    font-size: 2rem;
-}
-
-.logo:hover {
-    cursor: default;
 }
 
 .nav-links {
@@ -55,4 +49,74 @@ a:hover {
     color: #2D2A3C;
     text-decoration: underline;
     text-underline-offset: 1rem;
+}
+
+.logo {
+    color: #F6F3FC;
+    font-size: 2rem;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/* Sections */
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+/* Hero Section */
+
+#hero {    
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+}
+
+.section-text {
+    align-self: center;
+    font-size: 8rem;
+}
+
+.first-name {
+    padding-left: 5rem;
+}
+
+.surname {
+    padding-left: 18rem;
+}
+
+
+/* Animations */
+
+.slide-left {
+    animation: slide-in-left 1.5s ease-in-out both;
+}
+.slide-right {
+    animation: slide-in-right 1.5s ease-in-out both;
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
