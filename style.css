@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap");
 
 /* General */
 
@@ -16,8 +16,15 @@ html {
     scroll-behavior: smooth;
 }
 
-h1, p {
+h1, h2, h3, p {
+    margin: 0 4rem;
     color: #F6F3FC;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.25;
+    font-weight: 300;
 }
 
 /* Desktop Nav */
@@ -29,8 +36,8 @@ nav, .nav-links {
 nav {
     justify-content: space-between;
     align-items: center;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
     height: 8vh;
 }
 
@@ -139,8 +146,7 @@ a:hover {
 /* Sections */
 section {
     padding-top: 4vh;
-    height: 96vh;
-    margin: 0 10rem;
+    height: 100vh;
     box-sizing: border-box;
     min-height: fit-content;
 }
@@ -155,7 +161,7 @@ section {
 #hero {    
     display: flex;
     justify-content: center;
-    height: 80vh;
+    height: 92vh;
 }
 #hero:hover {
     cursor: default;
@@ -174,20 +180,56 @@ section {
     padding-left: 18rem;
 }
 
+.subtitle {
+    font-size: 2rem;
+    white-space: nowrap;
+    padding-left: 63rem;
+    transform: rotate(-20deg) translate(0, 200px);
+}
+
+/* About Section */
+
+#about {
+    background-color: #1B1924;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+    padding-top: 2rem;
+}
+
+.about-text-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
 
 /* Animations */
 
-.slide-left {
-    animation: slide-in-left 1.5s ease-in-out both;
+.surname.slide-left {
+    animation: title-slide-in-left 1.5s ease-in-out both;
 }
-.slide-right {
-    animation: slide-in-right 1.5s ease-in-out both;
+.first-name.slide-right {
+    animation: title-slide-in-right 1.5s ease-in-out both;
+}
+.subtitle.slide-right {
+    animation: title-slide-in-right 1.5s ease-in-out both 1.5s;
+}
+
+.js-scroll {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+.js-scroll.scrolled {
+    opacity: 1;
+    animation: slide-in-left 1s ease-in-out both;
 }
 
 @keyframes slide-in-left {
     0% {
-        transform: translateX(-800px);
+        transform: translateX(-100px);
         opacity: 0;
     }
     100% {
@@ -197,11 +239,32 @@ section {
 }
 @keyframes slide-in-right {
     0% {
-        transform: translateX(700px);
+        transform: translateX(100px);
         opacity: 0;
     }
     100% {
         transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes title-slide-in-left {
+    0% {
+        translate: -800px;
+        opacity: 0;
+    }
+    100% {
+        translate: 0;
+        opacity: 1;
+    }
+}
+@keyframes title-slide-in-right {
+    0% {
+        translate: 700px;
+        opacity: 0;
+    }
+    100% {
+        translate: 0;
         opacity: 1;
     }
 }

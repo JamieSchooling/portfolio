@@ -17,6 +17,12 @@
     .surname {
         padding-left: 10rem;
     }
+
+    .subtitle {
+        font-size: 1.5rem;
+        padding-left: 44rem;
+        transform: rotate(-20deg) translate(0, 150px);
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -31,9 +37,19 @@
     .surname {
         padding-left: 7rem;
     }
+    .subtitle {
+        font-size: 1.25rem;
+        padding-left: 29rem;
+        transform: rotate(-20deg) translate(0, 100px);
+    }
 }
 
 @media screen and (max-width: 570px) {
+    h1, h2, h3, p {
+        margin: 0 4rem;
+        color: #F6F3FC;
+    }
+    
     .hero-text {
         align-self: center;
         font-size: 2.5rem;
@@ -45,16 +61,15 @@
     .surname {
         padding-left: 4rem;
     }
+    .subtitle {
+        font-size: 1rem;
+        padding-left: 17rem;
+        transform: rotate(-20deg) translate(0, 55px);
+    }
 }
 
 @media screen and (max-width: 360px) {
-    section {
-        padding-top: 4vh;
-        height: 96vh;
-        margin: 0 5rem;
-        box-sizing: border-box;
-        min-height: fit-content;
-    }
+    
     .hero-text {
         align-self: center;
         font-size: 1.5rem;
@@ -65,5 +80,10 @@
     
     .surname {
         padding-left: 2.5rem;
+    }
+    .subtitle {
+        font-size: 0.9rem;
+        padding-left: 9.5rem;
+        transform: rotate(-20deg) translate(0, 35px);
     }
 }
