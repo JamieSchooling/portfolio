@@ -16,7 +16,7 @@ html {
 }
 
 p {
-    color: #F5EFFF;
+    color: #F6F3FC;
 }
 
 nav, .nav-links {
@@ -24,13 +24,23 @@ nav, .nav-links {
 }
 
 nav {
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    height: 10vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    height: 7vh;
+}
+
+.logo {
+    color: #F6F3FC;
+    font-size: 2rem;
+}
+
+.logo:hover {
+    cursor: default;
 }
 
 .nav-links {
-    padding-right: 10vw;
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
