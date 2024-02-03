@@ -69,6 +69,11 @@ section {
     min-height: fit-content;
 }
 
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 /* Hero Section */
 
 #hero {    
@@ -80,7 +85,7 @@ section {
     cursor: default;
 }
 
-.section-text {
+.hero-text {
     align-self: center;
     font-size: 8rem;
 }
@@ -92,6 +97,7 @@ section {
 .surname {
     padding-left: 18rem;
 }
+
 
 
 /* Animations */
