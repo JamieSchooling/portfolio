@@ -65,7 +65,7 @@ projectSection.addEventListener("touchmove",  e => {
     if (mouseDownAt === 0) return;
 
     const mouseDelta = mouseDownAt - e.touches[0].pageX;
-    const maxDelta = window.innerWidth * 2;
+    const maxDelta = window.innerWidth;
 
     percentage = (mouseDelta / maxDelta) * 100;
     percentage += lastPercentage;
