@@ -10,9 +10,12 @@
 body {
     background-color: #121118;
     font-family: "Josefin Sans", sans-serif;
+    overflow-x: hidden;
+    position: relative;
 }
 
 html {
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -211,6 +214,24 @@ section {
     display: flex;
     height: 600px;
     margin: auto 4rem;
+}
+
+/* Project Section */
+
+.project-image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 0%;
+}
+
+.image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    user-select: none;
+    margin: 1rem 0;
 }
 
 /* Animations */
