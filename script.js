@@ -29,6 +29,7 @@ function handleScrollAnimation() {
         }
     });
 }
+handleScrollAnimation();
 
 window.addEventListener('scroll', () => {
     handleScrollAnimation();

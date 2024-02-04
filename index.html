@@ -7,34 +7,37 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="mediaqueries.css"/>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico"/>
-    <script src="script.js" defer></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">js</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">about</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="mobile-nav">
-        <div class="logo">js</div>
-        <div class="mobile-menu">
-            <div class="mobile-menu-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+    <div class="nav-container">
+        <nav id="desktop-nav">
+            <div class="logo">js</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
             </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </nav>
+        <nav id="mobile-nav">
+            <div class="logo">js</div>
+            <div class="mobile-menu">
+                <div class="mobile-menu-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">about</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+        <hr>
+    </div>
     <section id="hero">
         <div class="hero-text">
             <h1 class="first-name slide-right">jamie</h1>
@@ -46,9 +49,9 @@
         <h1 class="title js-scroll slide-left">about me</h1>
         <div class="section-container">
             <div class="about-text-container js-scroll slide-left">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro debitis quo alias minima maxime, fugiat, eveniet tempora voluptates at ex, minus voluptatem quae repudiandae ad sequi incidunt fuga laboriosam dignissimos iusto culpa? Ducimus odit ipsum veritatis inventore debitis quas ut labore culpa rerum, nobis esse quia ab? Ipsa pariatur excepturi reprehenderit dolorum harum eveniet magni ipsum similique alias, explicabo illum! Magnam beatae temporibus, quis accusamus quibusdam culpa est, molestias eligendi fugiat veritatis illo repellendus reprehenderit iusto dignissimos amet fugit incidunt dolor distinctio voluptate eveniet. Aspernatur, eum eligendi! Illo nesciunt, natus perferendis qui, dolore quos officiis quae earum labore blanditiis aperiam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, necessitatibus eligendi? Et ipsa veniam officiis recusandae iure excepturi, sed possimus, culpa porro adipisci quisquam asperiores tenetur vel mollitia nesciunt non assumenda quidem praesentium maiores nihil. Illum inventore cum earum odit ipsam tempora explicabo commodi quod, eum nemo sint, sapiente animi repellat alias? Id dolorem rerum minus tenetur sed necessitatibus, dolore minima non fugit maiores consectetur sequi, possimus veniam commodi? Doloribus, minus nemo eius quia vero nobis. Laboriosam nemo, atque ad sequi omnis illum molestiae, aspernatur impedit officiis perferendis at eius earum unde vel deserunt ipsam sit, iusto debitis eos quisquam!</p>
             </div>
-            <div class="about-image-container js-scroll slide-bottom">
+            <div class="about-image-container js-scroll slide-top">
                 <img 
                     src="./images/photo.jpg" 
                     alt="Headshot" 

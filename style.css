@@ -32,6 +32,16 @@ p {
 
 /* Desktop Nav */
 
+.nav-container {
+    background-color: #121118;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    z-index: 1;
+}
+
 nav, .nav-links {
     display: flex;
 }
@@ -41,13 +51,19 @@ nav {
     align-items: center;
     padding-left: 3vw;
     padding-right: 3vw;
-    height: 8vh;
+    height: 6vh;
 }
 
 .nav-links {
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
+}
+
+hr {
+    height: 1px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: #1B1924;
 }
 
 a {
@@ -148,7 +164,7 @@ a:hover {
 
 /* Sections */
 section {
-    padding-top: 4vh;
+    padding-top: 4rem;
     min-height: 100vh;
     box-sizing: border-box;
     height: fit-content;
@@ -164,7 +180,7 @@ section {
 #hero {    
     display: flex;
     justify-content: center;
-    height: 92vh;
+    height: 94vh;
 }
 #hero:hover {
     cursor: default;
@@ -214,6 +230,7 @@ section {
     display: flex;
     height: 600px;
     margin: auto 4rem;
+    padding-bottom: 2rem;
 }
 
 /* Project Section */
