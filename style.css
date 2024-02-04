@@ -68,8 +68,6 @@ a {
 
 a:hover {
     color: #2D2A3C;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
 }
 
 .logo {
@@ -166,6 +164,7 @@ section {
 }
 
 .title {
+    color: #F6F3FC;
     font-size: 2rem;
     font-weight: 600;
 }
@@ -211,7 +210,6 @@ section {
     height: 80%;
     padding-top: 2rem;
     display: flex;
-    justify-content: space-between;
 }
 
 .about-text-container {
@@ -244,6 +242,89 @@ section {
     left: 50%;
     user-select: none;
     margin: 1rem 0;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    z-index: 10;
+    background-color: #1B1924;
+    width: 900px;
+    max-width: 80%;
+    height: fit-content;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #F6F3FC;
+}
+
+.modal-body {
+    color: #F6F3FC;
+    padding: 20px 15px;
+    display: flex;
+}
+
+.modal-image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+}
+
+.modal-text {
+    font-size: 1.5rem;
+    line-height: 1.25;
+    font-weight: 300;
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.modal-button-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.modal-button {
+    cursor: pointer;
+    border: none;
+    width: 150px;
+    line-height: 30px;
+    color: #F6F3FC;
+    background-color: #121118;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
 }
 
 /* Animations */

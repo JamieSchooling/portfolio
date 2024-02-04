@@ -63,9 +63,43 @@
         <h1 class="title js-scroll slide-left">projects</h1>
         <div class="section-container">
             <div class="image-track js-scroll">
-                <img src="./images/reverie.png" class="project-image" draggable="false"/>
-                <img src="./images/canvas-platformer.png" class="project-image" draggable="false"/>                
+                <img src="./images/reverie.png" class="project-image" draggable="false" data-modal-target="#reverie-info"/>
+                <img src="./images/canvas-platformer.png" class="project-image" draggable="false" data-modal-target="#canvas-info"/>                
             </div>
+
+            <div id="reverie-info" class="modal">
+                <div class="modal-header">
+                    <div class="title">Reverie</div>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/reverie.png" class="modal-image"/>
+                    <div class="modal-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque a quis vitae deserunt, illo aspernatur sunt facere similique placeat dolorem mollitia earum cum exercitationem? Omnis asperiores aut corrupti molestiae saepe illo tempore harum, voluptatem ipsam, soluta ipsa doloribus! Unde sit beatae natus consequuntur eaque voluptate blanditiis delectus, est veniam repellendus laudantium, similique reiciendis ipsum amet ea nostrum. Quibusdam iure fuga eaque dignissimos iste obcaecati non labore incidunt rem repellat? Eligendi iure delectus ab omnis fuga corrupti aperiam, unde dolore illum?
+                        <div class="modal-button-container">
+                            <a class="modal-button" href="https://github.com/JamieSchooling/Reverie" target="_blank">Source Code</a>    
+                            <a class="modal-button" href="#projects" >Demo</a>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+
+            <div id="canvas-info" class="modal">
+                <div class="modal-header">
+                    <div class="title">Canvas Platformer</div>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/canvas-platformer.png" class="modal-image"/>
+                    <div class="modal-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque a quis vitae deserunt, illo aspernatur sunt facere similique placeat dolorem mollitia earum cum exercitationem? Omnis asperiores aut corrupti molestiae saepe illo tempore harum, voluptatem ipsam, soluta ipsa doloribus! Unde sit beatae natus consequuntur eaque voluptate blanditiis delectus, est veniam repellendus laudantium, similique reiciendis ipsum amet ea nostrum. Quibusdam iure fuga eaque dignissimos iste obcaecati non labore incidunt rem repellat? Eligendi iure delectus ab omnis fuga corrupti aperiam, unde dolore illum?
+                        <div class="modal-button-container">
+                            <a class="modal-button" href="https://github.com/JamieSchooling/canvas-platformer" target="_blank">Source Code</a>    
+                            <a class="modal-button" href="https://jamieschooling.github.io/canvas-platformer" target="_blank">Demo</a>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+
+            <div id="overlay"></div>
         </div>
     </section>
 </body>

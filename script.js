@@ -90,3 +90,51 @@ function updateImageParallax(percentage) {
         image.style.objectPosition = `${percentage}%`
     }
 }
+
+
+
+const openModalButtons = document.querySelectorAll("[data-modal-target]");
+const overlay = document.getElementById("overlay");
+
+const clickTime = 200;
+let lastClickTimestamp = 0;
+openModalButtons.forEach(button => {
+    button.addEventListener("mousedown", event => {
+        lastClickTimestamp = event.timeStamp;
+    });
+    button.addEventListener("touchstart", event => {
+        lastClickTimestamp = event.timeStamp;
+    });
+    button.addEventListener("mouseup", event => {
+        console.log("here");
+        if (event.timeStamp - lastClickTimestamp <= clickTime) {
+            const modal = document.querySelector(button.dataset.modalTarget);
+            openModal(modal);
+        }
+    });
+    button.addEventListener("touchend", event => {
+        if (event.timeStamp - lastClickTimestamp <= clickTime) {
+            const modal = document.querySelector(button.dataset.modalTarget);
+            openModal(modal);
+        }
+    });
+});
+
+overlay.addEventListener("click", () => {
+    const modals = document.querySelectorAll(".modal.active");
+    modals.forEach(modal => {
+        closeModal(modal);
+    })
+});
+
+function openModal(modal) {
+    if (modal === null) return;
+    modal.classList.add("active");
+    overlay.classList.add("active");
+}
+
+function closeModal(modal) {
+    if (modal === null) return;
+    modal.classList.remove("active");
+    overlay.classList.remove("active");
+}
