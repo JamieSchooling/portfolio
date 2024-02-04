@@ -16,9 +16,9 @@ html {
     scroll-behavior: smooth;
 }
 
-h1, h2, h3, p {
-    margin: 0 4rem;
+h1, h2, h3, p{
     color: #F6F3FC;
+    margin: 0 4rem;
 }
 
 p {
@@ -194,17 +194,24 @@ section {
 }
 
 .section-container {
-    gap: 4rem;
     height: 80%;
     padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .about-text-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-self: flex-start;
 }
 
+.about-image-container {
+    display: flex;
+    height: 600px;
+    margin: auto 4rem;
+}
 
 /* Animations */
 
@@ -220,11 +227,23 @@ section {
 
 .js-scroll {
     opacity: 0;
-    transition: opacity 500ms;
+    transition: opacity 1000ms;
 }
 .js-scroll.scrolled {
     opacity: 1;
+}
+
+.js-scroll.scrolled.slide-left {
     animation: slide-in-left 1s ease-in-out both;
+}
+.js-scroll.scrolled.slide-right {
+    animation: slide-in-right 1s ease-in-out both;
+}
+.js-scroll.scrolled.slide-top {
+    animation: slide-in-top 1s ease-in-out both;
+}
+.js-scroll.scrolled.slide-bottom {
+    animation: slide-in-bottom 1s ease-in-out both;
 }
 
 @keyframes slide-in-left {
@@ -244,6 +263,26 @@ section {
     }
     100% {
         transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-bottom {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
         opacity: 1;
     }
 }
