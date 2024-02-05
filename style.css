@@ -244,6 +244,25 @@ section {
     margin: 1rem 0;
 }
 
+.project-track-item {
+    position: relative;
+    text-align: center;
+}
+
+.project-item-text {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: 200ms ease-in-out;
+}
+
+.project-track-item:hover .project-item-text{
+    opacity: 1;
+}
+
 .modal {
     position: fixed;
     top: 50%;
