@@ -327,6 +327,13 @@ section {
     pointer-events: all;
 }
 
+#portfolio-info .modal-image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 30%;
+}
+
 /* Animations */
 
 .surname.slide-left {
