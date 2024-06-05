@@ -372,13 +372,6 @@ section {
     background-color: #1B1924;
 }
 
-.section-container {
-    height: 80%;
-    padding-top: 2rem;
-    display: flex;
-    flex-direction: column;
-}
-
 .contact-links-container {
     display: flex;
     justify-content: end;
