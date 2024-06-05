@@ -19,12 +19,12 @@ html {
     scroll-behavior: smooth;
 }
 
-h1, h2, h3, p{
+h1, h2, h3, p, .contact-link {
     color: #F6F3FC;
     margin: 0 4rem;
 }
 
-p {
+p, .contact-link {
     font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 300;
@@ -171,12 +171,12 @@ section {
 
 /* Hero Section */
 
-#hero {    
+#home {    
     display: flex;
     justify-content: center;
     height: 94vh;
 }
-#hero:hover {
+#home:hover {
     cursor: default;
 }
 
@@ -364,6 +364,25 @@ section {
     height: 56vmin;
     object-fit: cover;
     object-position: 30%;
+}
+
+/* Contact Section */
+
+#contact {
+    background-color: #1B1924;
+}
+
+.section-container {
+    height: 80%;
+    padding-top: 2rem;
+    display: flex;
+}
+
+.contact-links-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: flex-start;
 }
 
 /* Animations */

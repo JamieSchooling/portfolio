@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="mediaqueries.css"/>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico"/>
     <script defer src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </head>
 <body>
     <div class="nav-container">
         <nav id="desktop-nav">
-            <div class="logo">js</div>
+            <a href="#home" class="logo">js</a>
             <div>
                 <ul class="nav-links">
                     <li><a href="#about">about</a></li>
@@ -37,7 +38,7 @@
             </div>
         </nav>
     </div>
-    <section id="hero">
+    <section id="home">
         <div class="hero-text">
             <h1 class="first-name slide-right">jamie</h1>
             <h1 class="surname slide-left">schooling</h1>
@@ -150,6 +151,15 @@
             </div>
 
             <div id="overlay"></div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="title js-scroll slide-left">contact</h1>
+        <div class="section-container">
+            <div class="contact-links-container js-scroll slide-left">
+               <a class="contact-link" href="https://github.com/JamieSchooling" target="_blank"><ion-icon name="logo-github"></ion-icon> GitHub</a>
+               <a class="contact-link" href="https://www.linkedin.com/in/jamie-schooling/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon> LinkedIn</a>
+            </div>
         </div>
     </section>
 </body>
