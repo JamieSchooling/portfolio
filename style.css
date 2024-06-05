@@ -7,7 +7,7 @@
     padding: 0;
 }
 
-body {
+body, input, textarea {
     background-color: #121118;
     font-family: "Josefin Sans", sans-serif;
     overflow-x: hidden;
@@ -19,12 +19,12 @@ html {
     scroll-behavior: smooth;
 }
 
-h1, h2, h3, p, .contact-link {
+h1, h2, h3, p, .contact-link, input, textarea, ::placeholder {
     color: #F6F3FC;
     margin: 0 4rem;
 }
 
-p, .contact-link {
+p, .contact-links-container {
     font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 300;
@@ -376,14 +376,72 @@ section {
     height: 80%;
     padding-top: 2rem;
     display: flex;
+    flex-direction: column;
 }
 
 .contact-links-container {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-self: flex-start;
+    justify-content: end;
+    flex-direction: row;
+    padding-top: 10px;
 }
+
+.contact-form-container {
+    margin: 0 4rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-info-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+}
+
+.contact-form-submit-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    padding-top: 150px;
+}
+
+input[type=text], select {
+    width: 45%;
+    height: 40px;
+    margin: 0px;
+    border: none;
+    padding: 5px 10px;
+}
+
+#subject {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 40px;
+    margin: 0px;
+    padding: 15px 10px;
+    position: relative;
+    border: none;
+    resize: none;
+}
+
+input[type=submit] {
+    height: 40px;
+    margin: 0px;
+    width: 10%;
+    background-color: #121118;
+    border: none;
+    cursor: pointer;
+}
+  
+  input[type=submit]:hover {
+    background-color: #2D2A3C;
+  }
 
 /* Animations */
 
