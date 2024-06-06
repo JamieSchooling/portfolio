@@ -24,7 +24,7 @@ h1, h2, h3, p, .contact-link, input, textarea, ::placeholder {
     margin: 0 4rem;
 }
 
-p, .contact-links-container {
+p, .contact-links-container, input, textarea {
     font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 300;
@@ -426,7 +426,7 @@ textarea {
 input[type=submit] {
     height: 40px;
     margin: 0px;
-    width: 10%;
+    width: 15%;
     background-color: #121118;
     border: none;
     cursor: pointer;
