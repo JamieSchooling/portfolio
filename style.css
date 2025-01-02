@@ -193,13 +193,6 @@ section {
     padding-left: 18rem;
 }
 
-.subtitle {
-    font-size: 2rem;
-    white-space: nowrap;
-    padding-left: 63rem;
-    transform: rotate(-20deg) translate(0, 200px);
-}
-
 /* About Section */
 
 #about {
