@@ -2,8 +2,67 @@
 <html>
     <head>
         <title>Jamie Schooling | Games Programmer</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script defer src="script.js"></script>
     </head>
     <body>
-        Portfolio
+        <div class="nav-container">
+            <nav id="desktop-nav">
+                <a href="#home" class="logo">js</a>
+                <div>
+                    <ul class="nav-links">
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#projects">projects</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <nav id="mobile-nav">
+                <div class="logo">js</div>
+                <div class="mobile-menu">
+                    <div class="mobile-menu-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <li><a href="#about" onclick="toggleMenu()">about</a></li>
+                        <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
+                        <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <section id="home">
+            <div class="hero-text">
+                <h1 class="name slide-top">Jamie Schooling</h1>
+                <h5 class="subtitle slide-bottom">Games Programmer</h5>
+            </div>
+        </section>
+        <section id="about">
+            <h1 class="js-scroll slide-left">about me</h1>
+            <div class="section-container">
+                <p class="about-text-container js-scroll slide-left">
+                    <b>Hi! I'm Jamie, a final-year Computer Games Programming student at De Montfort University.</b>
+                    What began as a childhood dream of inventing has grown into a passion for designing and developing games. 
+                    I enjoy tackling technical challenges, from writing shaders in OpenGL to developing a small game engine, and I'm proficient in C++, C#, and Unity.
+                    Outside of coding, I tinker with personal projects and draw inspiration from books, shows, and games. 
+                    My goal is to design and develop games full-time, creating experiences that are both engaging and innovative.
+                </p>
+            </div>
+        </section>
+        <section id="projects">
+            <h1 class="js-scroll slide-left">projects</h1>
+            <div class="section-container">
+                
+            </div>
+        </section>
+        <section id="contact">
+            <h1 class="js-scroll slide-left">contact</h1>
+            <div class="section-container">
+                
+            </div>
+        </section>
     </body>
 </html>
