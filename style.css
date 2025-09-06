@@ -52,6 +52,7 @@ b {
     font-weight: 700;
     font-size: 1.1rem;
 }
+
 /* Desktop Nav */
 
 .nav-container {
@@ -180,17 +181,18 @@ a:hover {
 /* Sections */
 section {
     padding-top: 4rem;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     box-sizing: border-box;
     height: fit-content;
 }
 
 .section-container {
-    height: 80%;
     padding-top: 2rem;
     display: flex;
+    flex-direction: column;
 }
 
+/* Home */
 #home {    
     display: flex;
     justify-content: center;
@@ -209,6 +211,7 @@ section {
     padding-left: 0rem;
 }
 
+/* About */
 .about-text-container {
     display: flex;
     justify-content: center;
@@ -219,6 +222,40 @@ section {
     padding: 10px;
 }
 
+/* Projects */
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.project-title-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-title {
+    background-color: var(--accent);
+    width: 50%;
+}
+
+.project-button-container {
+    padding-left: 10px;
+    display: flex;
+    justify-content: left;
+}
+
+.project-button {
+    padding-right: 10px;
+}
+
+.project-image {
+    width: 60%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-self: center;
+}
 
 /* Contact Section */
 
@@ -280,14 +317,15 @@ textarea {
 input[type=submit] {
     height: 40px;
     margin: 0px;
-    width: 15%;
+    padding: 10px;
+    width: 120px;
     background-color: var(--background);
     border: var(--border-size) solid var(--accent);
     cursor: pointer;
 }
   
 input[type=submit]:hover {
-background-color: var(--accent);
+    background-color: var(--accent);
 }
 
 /* Animations */
