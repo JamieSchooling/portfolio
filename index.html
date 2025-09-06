@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="mediaqueries.css"/>
         <script defer src="script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     </head>
     <body>
         <div class="nav-container">
@@ -62,7 +63,27 @@
         <section id="contact">
             <h1 class="js-scroll slide-left">contact</h1>
             <div class="section-container">
-                
+                <div class="contact-form-container js-scroll slide-top">
+                <form action="https://public.herotofu.com/v1/1d6757c0-2381-11ef-a512-2d50852e3019" method="post" accept-charset="UTF-8">
+                    <div class="contact-form-info-row">
+                        <input type="text" id="fname" name="Name" placeholder="Name">
+                        <input type="text" id="email" name="Email" placeholder="Email">
+                    </div>
+                    <div class="contact-form-info-row">
+                        <input type="text" id="subject" name="Subject" placeholder="Subject Line">
+                    </div>
+                    <div class="contact-form-info-row">
+                        <textarea id="message" name="Message" placeholder="What's on your mind?" style="height:170px"></textarea>
+                    </div>
+                    <div class="contact-form-submit-row">
+                        <input type="submit" value="Submit">
+                        <div class="contact-links-container">
+                            <a class="contact-link" href="https://github.com/JamieSchooling" target="_blank"><ion-icon name="logo-github"></ion-icon> GitHub</a>
+                            <a class="contact-link" href="https://www.linkedin.com/in/jamieschooling/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon> LinkedIn</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
             </div>
         </section>
     </body>
