@@ -1,0 +1,30 @@
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #mobile-nav {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .name {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+    
+    b {
+        font-size: 2.3rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .about-text-container {
+        padding: 15px;
+    }
+}
