@@ -5,6 +5,10 @@
     #mobile-nav {
         display: flex;
     }
+
+    nav {
+        padding-right: 3vw;
+    }
     
     .headshot {
         width: 100%;
