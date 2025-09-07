@@ -5,6 +5,10 @@
     #mobile-nav {
         display: flex;
     }
+    
+    .headshot {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -12,10 +16,18 @@
         font-size: 3rem;
     }
     
-    .about-text-container {
+    .about-bubble {
         padding: 15px;
         width: 80%;
         align-self: center;
+    }
+
+    .headshot {
+        width: 50%;
+    }
+
+    .about-row {
+        flex-direction: column;
     }
 
     .project-title-bar {

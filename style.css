@@ -218,7 +218,7 @@ section {
 }
 
 /* About */
-.about-text-container {
+.about-bubble {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -228,8 +228,22 @@ section {
     padding: 10px;
     margin: 0 4rem;
 }
-.about-text-container p{
+
+.headshot {
+    border-radius: 50%;
+    border: var(--border-size) solid var(--accent);
+    width: 50%;
+    margin-right: 10px;
+}
+
+.about-bubble p{
     margin: 0;
+}
+
+.about-row {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
 }
 
 /* Projects */
