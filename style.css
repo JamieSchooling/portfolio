@@ -53,6 +53,12 @@ b {
     font-size: 1.1rem;
 }
 
+.caption {
+    display: inline; 
+    padding-top: 10px; 
+    opacity: 50%;
+}
+
 /* Desktop Nav */
 
 .nav-container {
@@ -220,6 +226,10 @@ section {
     border: var(--border-size) solid var(--accent);
     border-radius: 10px;
     padding: 10px;
+    margin: 0 4rem;
+}
+.about-text-container p{
+    margin: 0;
 }
 
 /* Projects */
