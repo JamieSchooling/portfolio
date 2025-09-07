@@ -28,6 +28,7 @@
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body, input, textarea {
@@ -40,13 +41,22 @@ body, input, textarea {
 }
 
 
-h1, h2, h3, h4, h5, p, .contact-link, input, textarea, ::placeholder {
+h1, h2, h3, h4, h5, p, .contact-link, input, textarea, ul, ol, ::placeholder {
     margin: 0 4rem;
 }
 
 p, .contact-links-container, input, textarea {
     line-height: normal;
     font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+a:hover {
+    color: var(--accent);
 }
 
 b {
@@ -58,6 +68,10 @@ b {
     display: inline; 
     padding-top: 10px; 
     opacity: 50%;
+}
+
+.caption a {
+    opacity: 100%;
 }
 
 /* Desktop Nav */
@@ -90,15 +104,6 @@ nav {
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
-}
-
-a {
-    text-decoration: none;
-    color: var(--text);
-}
-
-a:hover {
-    color: var(--accent);
 }
 
 .logo {
