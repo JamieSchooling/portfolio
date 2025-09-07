@@ -57,6 +57,7 @@ a {
 
 a:hover {
     color: var(--accent);
+    cursor: pointer;
 }
 
 b {
@@ -246,11 +247,23 @@ section {
     margin: 0;
 }
 
-.about-row {
+.about-main {
     display: flex; 
     flex-direction: row; 
     align-items: center;
 }
+
+.about-footer {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-footer > * {
+    padding-top: 10px;
+}
+
 
 /* Projects */
 

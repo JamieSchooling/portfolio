@@ -26,8 +26,13 @@
         width: 50%;
     }
 
-    .about-row {
+    .about-main {
         flex-direction: column;
+    }
+
+    .about-footer {
+        flex-direction: column;
+        align-items: center;
     }
 
     .project-title-bar {
