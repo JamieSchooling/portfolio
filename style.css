@@ -237,7 +237,7 @@ section {
 .headshot {
     border-radius: 50%;
     border: var(--border-size) solid var(--accent);
-    width: 50%;
+    width: 20%;
     margin-right: 10px;
 }
 
