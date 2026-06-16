@@ -288,7 +288,26 @@ section {
 }
 
 .project-button {
+    width: 100px;
+    height: 20px;
     padding-right: 10px;
+    display: inline-block;
+    margin: 0;
+    margin-right: 0.6rem;
+    padding: 9px 10px;
+    background-color: var(--background);
+    border: var(--border-size) solid var(--accent);
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    line-height: 20px; /* or adjust for vertical centering */
+    font-size: small;
+}
+
+.project-button:hover {
+    background-color: var(--accent);
+    color: var(--text);
 }
 
 .project-image {
